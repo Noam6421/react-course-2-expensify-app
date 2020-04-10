@@ -1,5 +1,5 @@
 Arguments: 
-  /home/noam6421/.nvm/versions/node/v13.11.0/bin/node /home/noam6421/.nvm/versions/node/v13.11.0/bin/yarn install
+  /home/noam6421/.nvm/versions/node/v13.11.0/bin/node /home/noam6421/.nvm/versions/node/v13.11.0/bin/yarn add extract-text-webpack-plugin@3.0.0
 
 PATH: 
   /home/noam6421/.nvm/versions/node/v13.11.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs:/mnt/c/Users/Noamk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Noamk/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Noamk/AppData/Roaming/npm:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: ENOENT: no such file or directory, copyfile '/home/noam6421/.cache/yarn/v6/npm-prop-types-15.7.2-52c41e75b8c87e72b9d9360e0206b99dcbffa6c5-integrity/node_modules/prop-types/CHANGELOG.md' -> '/mnt/c/Users/Noamk/Documents/react-course-projects/expensify-app/node_modules/prop-types/CHANGELOG.md'
+  Error: ENOENT: no such file or directory, lstat '/home/noam6421/.cache/yarn/v6/npm-core-js-1.2.7-652294c14651db28fa93bd2d5ff2983a4f08c636-integrity/node_modules/core-js/modules/$.add-to-unscopables.js'
 
 npm manifest: 
   {
@@ -24,7 +24,8 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "serve": "live-server public/",
-      "build": "webpack",
+      "build:dev": "webpack",
+      "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
       "test": "jest --config=jest.config.json"
     },
