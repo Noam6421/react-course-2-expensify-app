@@ -153,10 +153,10 @@ export { firebase, database as default };
 //     console.log('This failed', e);
 // });
 
-// database.ref('isSingle')
+// database.ref('expenses')
 //     .remove()
-//     .then(() => {
-//         console.log('Data was Removed');
+//     .then((a) => {
+//         console.log('Data was Removed'+ a);
 //     })
 //     .catch((e) => {
 //         console.log('Did not remove data', e);
